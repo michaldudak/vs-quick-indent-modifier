@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingsChanger", "SettingsChanger\SettingsChanger.csproj", "{7D9C3288-00F5-40B2-9190-BE8A8C747A77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickIndentModifier", "QuickIndentModifier\QuickIndentModifier.csproj", "{7D9C3288-00F5-40B2-9190-BE8A8C747A77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FF08B89-E19E-4C2B-98A3-4E9373B627B8}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<Extern href="stdidcmd.h" />
+	<Extern href="vsshlids.h" />
+
+	<Commands package="guidIndentCommandPackage">
+		<Menus>
+			<Menu guid="guidIndentCommandPackageCmdSet" id="ToolbarMenu" priority="0x0001" type="Toolbar">
+				<Strings>
+					<ButtonText>Quick Indent Modifier</ButtonText>
+				</Strings>
+			</Menu>
+		</Menus>
+
+		<Groups>
+			<Group guid="guidIndentCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+			</Group>
+
+			<Group guid="guidIndentCommandPackageCmdSet" id="MainToolbarGroup" priority="0x0100">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_STANDARD" />
+			</Group>
+
+			<Group guid="guidIndentCommandPackageCmdSet" id="ToolbarGroup" priority="0x0100">
+				<Parent guid="guidIndentCommandPackageCmdSet" id="ToolbarMenu" />
+			</Group>
+		</Groups>
+		
+		<Buttons>
+			<Button guid="guidIndentCommandPackageCmdSet" id="UseTabsCommandId" priority="0x0100" type="Button">
+				<Parent guid="guidIndentCommandPackageCmdSet" id="MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpTabs" />
+				<Strings>
+					<ButtonText>Use tabs</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guidIndentCommandPackageCmdSet" id="UseSpacesCommandId" priority="0x0200" type="Button">
+				<Parent guid="guidIndentCommandPackageCmdSet" id="MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpSpaces" />
+				<Strings>
+					<ButtonText>Use spaces</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+		
+		<Bitmaps>
+			<Bitmap guid="guidImages" href="Resources\IndentCommand.png" usedList="bmpSpaces, bmpTabs" />
+		</Bitmaps>
+	</Commands>
+
+	<CommandPlacements>
+		<CommandPlacement guid="guidIndentCommandPackageCmdSet" id="UseTabsCommandId" priority="0x100">
+			<Parent guid="guidIndentCommandPackageCmdSet" id="ToolbarGroup" />
+		</CommandPlacement>
+
+		<CommandPlacement guid="guidIndentCommandPackageCmdSet" id="UseSpacesCommandId" priority="0x200">
+			<Parent guid="guidIndentCommandPackageCmdSet" id="ToolbarGroup" />
+		</CommandPlacement>
+	</CommandPlacements>
+
+	<Symbols>
+		<GuidSymbol name="guidIndentCommandPackage" value="{6856dd3c-2a96-4074-8d72-85ed3b6c38cd}" />
+
+		<GuidSymbol name="guidIndentCommandPackageCmdSet" value="{aaba3f09-5436-42af-bc60-2dfc390da4c5}">
+			<IDSymbol name="MyMenuGroup" value="0x1020" />
+			<IDSymbol name="ToolbarMenu" value="0x2020" />
+			<IDSymbol name="MainToolbarGroup" value="0x3020" />
+			<IDSymbol name="ToolbarGroup" value="0x4020" />
+			
+			<IDSymbol name="UseTabsCommandId" value="0x0100" />
+			<IDSymbol name="UseSpacesCommandId" value="0x0200" />
+		</GuidSymbol>
+
+		<GuidSymbol name="guidImages" value="{aa8bc7e7-3172-4290-a460-8ea622a89d6d}">
+			<IDSymbol name="bmpSpaces" value="1" />
+			<IDSymbol name="bmpTabs" value="2" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
