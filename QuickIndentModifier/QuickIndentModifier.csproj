@@ -23,8 +23,8 @@
     <ProjectGuid>{7D9C3288-00F5-40B2-9190-BE8A8C747A77}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SettingsChanger</RootNamespace>
-    <AssemblyName>SettingsChanger</AssemblyName>
+    <RootNamespace>QuickIndentModifier</RootNamespace>
+    <AssemblyName>QuickIndentModifier</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
