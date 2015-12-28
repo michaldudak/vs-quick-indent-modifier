@@ -1,6 +1,6 @@
 # Quick Indent Modifier
 
-Do you often work with projects using diffent indentation characters? Are you tired of digging through Visual Studio settings to change the desired option?
+Do you often work with projects using different indentation characters? Are you tired of digging through Visual Studio settings to change the desired option?
 **Quick Indent Modifier** comes to the rescue!
 
 Quick Indent Modifier is a super simple Visual Studio add-in. It provides two commands that globally change the indentation settings (the one you can find in Options/Text Editor/All Languages/Tabs) - Use spaces and Use tabs.
